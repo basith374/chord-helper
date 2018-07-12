@@ -1,0 +1,96 @@
+html, body, #root {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+.App {
+  float: left;
+  height: 100%;
+}
+
+.btns {
+  padding-left: 10px;
+  padding-top: 10px;
+  float: left;
+  max-height: 100%;
+  overflow-y: scroll;
+}
+button {
+  transform: rotate(90deg);
+}
+.btns button {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  background: #efefef;
+  color: #555;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: block;
+}
+.btns button:active {
+  background: #ccc;
+}
+.btns button + button {
+  margin-top: 5px;
+}
+
+.tabl-out {
+  padding: 10px;
+  float: left;
+}
+.c-tabl {
+  border: 1px solid #ccc;
+  font-size: 10px;
+}
+.c-tabl button {
+  border: none;
+  background: transparent;
+}
+.c-tabl .row + .row {
+  border-top: 1px solid #ccc;
+}
+.c-tabl .row {
+  display: flex;
+  position: relative;
+}
+.c-tabl .col {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-tabl .col + .col {
+  border-left: 1px solid #ccc;
+}
+.c-tabl .col.root {
+  background: rgb(247, 52, 52);
+}
+.c-tabl .col.maj {
+  background: rgb(255, 151, 82);
+}
+.c-tabl .col.min {
+  background: darkmagenta;
+}
+.c-tabl .dot.mid {
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+}
+.c-tabl .dot.left {
+  left: 22px;
+}
+.c-tabl .dot.right {
+  right: 22px;
+}
+.c-tabl .dot {
+  width: 6px;
+  height: 6px;
+  background: #333;
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+}
